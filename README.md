@@ -1,6 +1,6 @@
 # Alias-Chain
 
-Eurosys '21.
+Wait for supplement...
 
 ## Environment
 
@@ -20,7 +20,7 @@ Linux whatever.
 
 - analysis
 
- > Corresponding to Chap2. Analysis for `address`, `value` and `input`.
+ > Corresponding to Chap3. Analysis for `address`, `value` and `input`.
 
 - simulator
 
