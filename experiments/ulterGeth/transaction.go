@@ -33,6 +33,7 @@ import (
 
 var (
 	ErrInvalidSig = errors.New("invalid transaction v, r, s values")
+	FakeRecipient = common.HexToAddress("5aaeb6053f3e94c9b9a09f33669435e7ef1beaed")
 )
 
 type Transaction struct {
@@ -189,7 +190,10 @@ func (tx *Transaction) CheckNonce() bool   { return true }
 // It returns nil if the transaction is a contract creation.
 func (tx *Transaction) To() *common.Address {
 	if tx.data.Id != nil {
-		tempto := common.HexToAddress("5aaeb6053f3e94c9b9a09f33669435e7ef1beaed")
+		// We do a real transformation outside Geth which will not affect the safety
+		// and consistency. Besides, only few codes are adjusted to evaluate the
+		// real effectiveness of Alias-Chain.
+		tempto := FakeRecipient
 		return &tempto
 	}
 	if tx.data.Recipient == nil {
