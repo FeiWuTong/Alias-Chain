@@ -6,8 +6,6 @@ Wait for supplement...
 
 Ubuntu 16.04 / 18.04
 
-Linux whatever.
-
 ## Requisite
 
 1. Geth v1.9.23 source code
@@ -30,10 +28,6 @@ Corresponding to Chap5. Simulation for `address` and `input`.
 
 Corresponding to Chap6. Experimental evaluation for `address` and `input`.
 
-- examples
-
-Some output results.
-
 ## Paper
 
-Alias-Chain: Improving Blockchain Scalability via Exploring Content Locality inside Valid Data
+Alias-Chain: Improving Blockchain Scalability via Exploring Content Locality among Transactions
